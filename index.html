@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plantilla CV - Jorge Alonso Ramírez Gutiérrez</title>
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --card:#ffffff;
+      --accent:#0b61a4; /* azul profesional */
+      --muted:#6b7280;
+      --text:#111827;
+      --max-width:900px;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text)}
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:22px}
+    .card{background:var(--card);box-shadow:0 6px 20px rgba(15,23,42,0.06);border-radius:10px;padding:18px;}
+
+    /* Header */
+    .header{display:flex;align-items:center;gap:16px;border-bottom:1px solid #eef2f7;padding-bottom:12px}
+    .name{font-size:20px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.6px}
+    .sub{font-size:13px;color:var(--muted)}
+    .contact{margin-left:auto;text-align:right}
+    .contact p{margin:0;font-size:13px;color:var(--muted)}
+
+    /* Two column layout */
+    .body{display:grid;grid-template-columns:1fr 340px;gap:var(--gap);padding-top:14px}
+    .left{min-width:0}
+    .right{background:linear-gradient(180deg,rgba(11,97,164,0.03),transparent);border-radius:8px;padding:12px}
+
+    h3{margin:0 0 8px 0;font-size:14px;color:var(--accent)}
+    p,li{font-size:13px;color:#222;margin:0 0 8px 0}
+    ul{padding-left:16px;margin:0}
+    .muted{color:var(--muted);font-size:13px}
+
+    .section{margin-bottom:12px}
+    .job{margin-bottom:10px}
+    .job .title{font-weight:600}
+    .job .meta{font-size:12px;color:var(--muted)}
+
+    /* Skills list */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#eef7ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:12px}
+
+    /* Print friendly - try to fit in one page */
+    @media print{
+      body{background:white}
+      .wrap{max-width:800px;margin:0;padding:6mm}
+      .card{box-shadow:none;border-radius:0;padding:4mm}
+      .contact{float:right}
+      .body{grid-template-columns:1fr 300px}
+      a{color:inherit}
+      img{max-width:100%}
+      @page{size:A4;margin:10mm}
+    }
+
+    /* Responsive */
+    @media(max-width:820px){
+      .body{grid-template-columns:1fr;}
+      .contact{text-align:left;margin-top:8px}
+      .right{order:2}
+    }
+
+    /* Placeholder styles (so you can copy/paste easily) */
+    .placeholder{color:var(--muted);font-style:italic}
+
+    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="header">
+        <div>
+          <div class="name">JORGE ALONSO RAMÍREZ GUTIÉRREZ</div>
+          <div class="sub">Estudiante de Ingeniería en Sistemas Computacionales (UVEG) • Mejora continua • IA aplicada</div>
+        </div>
+        <div class="contact">
+          <p>Camargo, Chihuahua</p>
+          <p>📞 648 132 0083</p>
+          <p>✉️ jarg2214@gmail.com</p>
+        </div>
+      </header>
+
+      <main class="body">
+        <section class="left">
+
+          <div class="section">
+            <h3>Objetivo profesional</h3>
+            <p>Estudiante de Ingeniería en Sistemas Computacionales con conocimientos en automatización, análisis de datos e Inteligencia Artificial aplicada a la mejora de procesos industriales y administrativos. Busco integrarme en FSG Athletic para optimizar procesos, reducir desperdicios y mejorar la eficiencia operativa mediante soluciones tecnológicas y metodologías de calidad.</p>
+          </div>
+
+          <div class="section">
+            <h3>Experiencia laboral</h3>
+
+            <div class="job">
+              <div class="title">Emprendimiento personal – Independiente <span class="meta muted">(Ene 2023 – Actualidad)</span></div>
+              <ul>
+                <li>Gestión integral de negocio: ventas, inventario y atención al cliente.</li>
+                <li>Aplicación de Kaizen y Lean Six Sigma para optimizar procesos.</li>
+                <li>Uso de herramientas digitales e IA para control de inventarios y análisis de ventas.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="title">Encargado de Sucursal – Farmacias Guadalajara <span class="meta muted">(Feb 2022 – Dic 2023)</span></div>
+              <ul>
+                <li>Supervisión de personal, control de inventarios y cumplimiento de metas.</li>
+                <li>Aplicación de protocolos de seguridad e higiene.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="title">Materialista / Encargado de Embarques – Contec S.A. de C.V. <span class="meta muted">(Oct 2019 – Jul 2021)</span></div>
+              <ul>
+                <li>Coordinación de embarques y control de materiales.</li>
+                <li>Elaboración de reportes y coordinación con producción.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="title">Ventas – Alsuper Camargo <span class="meta muted">(Feb 2019 – Oct 2019)</span></div>
+              <ul>
+                <li>Atención al cliente, gestión de inventarios y exhibición de productos.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="section">
+            <h3>Formación académica</h3>
+            <div class="job">
+              <div class="title">Ingeniería en Sistemas Computacionales – UVEG <span class="meta muted">(2024 – Actualidad)</span></div>
+              <p class="muted">Materias principales: Administración estratégica, Ingeniería de software, POO, Bases de datos, Redes y servidores, Calidad del servicio.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <aside class="right">
+
+          <div class="section">
+            <h3>Conocimientos técnicos</h3>
+            <div class="skills">
+              <div class="chip">POO</div>
+              <div class="chip">Bases de datos</div>
+              <div class="chip">Redes & Servidores</div>
+              <div class="chip">Microsoft Office</div>
+              <div class="chip">Kaizen</div>
+              <div class="chip">Lean Six Sigma</div>
+              <div class="chip">IA aplicada</div>
+              <div class="chip">Automatización</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Habilidades blandas</h3>
+            <ul>
+              <li>Comunicación y trabajo en equipo</li>
+              <li>Liderazgo y responsabilidad</li>
+              <li>Pensamiento analítico y resolución de problemas</li>
+              <li>Organización y gestión del tiempo</li>
+              <li>Adaptabilidad</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Idiomas</h3>
+            <p>Español: Nativo<br>Inglés: Intermedio (en aprendizaje)</p>
+          </div>
+
+          <div class="section">
+            <h3>Logros</h3>
+            <ul>
+              <li>Optimización de flujo de embarques en Contec.</li>
+              <li>Cumplimiento de metas de ventas e inventarios en Farmacias Guadalajara.</li>
+            </ul>
+          </div>
+
+        </aside>
+      </main>
+
+      <footer>
+        Plantilla editable • Copia y pega tu información en los espacios correspondientes. Imprime a una página A4 o guárdalo como PDF.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
